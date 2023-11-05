@@ -1,0 +1,659 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+#back_banner {
+    object-fit: cover;
+    width: 100%;
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#dark {
+    backdrop-filter: brightness(0.4);
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+}
+
+#headerCont {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+    padding-top: 1.4rem;
+    padding-left: 10rem;
+}
+
+#headerCont img {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+#header_li {
+    margin-top: 0;
+
+    text-align: center;
+    padding: 0;
+}
+
+#header_li select {
+    border: 1px solid #bbb;
+    padding: 0.2rem 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#header_li li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.lang_s {
+    border: 1px solid #615e5e;
+    background-color: #161214;
+    padding-right: 1.8rem;
+    padding-left: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: white;
+
+}
+
+
+#header_li button {
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #161214;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+
+}
+
+select {
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+#title_heading {
+    margin-top: 10rem;
+    padding-bottom: 6rem;
+
+}
+
+#title_heading div {
+    /* background-color: rgba(247, 165, 165, 0.205); */
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 13rem;
+    padding-bottom: 2rem;
+
+
+}
+
+#title_heading div h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    margin-bottom: 0;
+
+
+}
+
+#title_heading div>p {
+    margin-top: 1rem;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    ;
+    font-size: 1.7rem;
+}
+
+.ready_p {
+    font-size: 1.4rem;
+    color: white;
+
+}
+
+
+.email_ask {
+
+    background: transparent;
+    width: 30%;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #bbb;
+    font-size: 1rem;
+    color: white;
+    border-radius: 6px;
+
+    margin-right: 1rem;
+}
+
+.get_start {
+
+    border-radius: 6px;
+    width: 20%;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #e50914;
+    border: none;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+}
+
+#title_heading div input::placeholder {
+    color: #bbb;
+}
+
+.enjoyTV {
+    background-color: rgb(0, 0, 0);
+    border-top: 6px solid gray;
+    border-bottom: 2px solid gray;
+
+}
+
+.first-sec {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: auto;
+    padding: 3rem 0rem;
+
+}
+
+.first-sec div {
+    width: 48%;
+}
+
+.right-image-video {
+    position: relative;
+}
+
+.right-image-video img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+.right-image-video #eTV {
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    width: 73%;
+    z-index: 1;
+}
+
+.right-image-video #wTV {
+    position: absolute;
+    top: 9%;
+    left: 16%;
+    right: 67%;
+    width: 66%;
+}
+
+.mob_download {
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.mob_download img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#download_option {
+    width: 48%;
+    position: absolute;
+    top: 69%;
+    left: 25%;
+    z-index: 2;
+    display: flex;
+    border: 2px solid #615e5e;
+    border-radius: 9px;
+    justify-content: space-between;
+    padding: 0.3rem 0.2rem;
+    padding-bottom: 0.4rem;
+    background-color: #000;
+}
+
+#download_option div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#download_option #text_d {
+    display: inline-block;
+    width: 100%;
+
+}
+
+#download_option #text_d h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0;
+    padding-top: 1.2rem;
+    padding-left: 0.8rem;
+}
+
+#download_option #text_d #downloading {
+    color: #0071eb;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 0.8rem;
+}
+
+#download_option img {
+    width: 80%;
+
+}
+
+#download_option div #downloading {
+
+    margin-top: 0;
+}
+
+#left-para-heading h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+#left-para-heading p {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#third-sec {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto
+}
+
+#third-sec div {
+    width: 48%;
+}
+
+#left-child-image img {
+    width: 100%;
+}
+
+#right-child-content h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    padding-bottom: 0;
+    color: white;
+}
+
+#right-child-content p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdan;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+#all_links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.75rem;
+}
+
+
+#faq {
+    width: 75%;
+    margin: auto;
+}
+
+#faq h1 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+#faq ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#faq ul li {
+    padding: 1.7rem 0;
+    padding-left: 0rem;
+    font-size: 1.5rem;
+
+    background-color: #2d2d2d;
+
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.q1 {
+    position: relative;
+    padding: 1rem 2rem;
+
+}
+
+.q1 span {
+    padding-left: 2rem;
+}
+
+.answer {
+    position: relative;
+    padding: 1rem 2rem;
+    display: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    top: 30px;
+
+    border-top: 2px solid black;
+}
+
+.q1:hover .answer {
+    display: block;
+}
+
+#faq_email_btn {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+footer {
+    background-color: black;
+}
+
+#footer_l {
+    padding: 2rem;
+
+    color: #9fa7af;
+
+    width: 80%;
+    margin: auto;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+#all_links a {
+    color: #9fa7af;
+    text-decoration: underline;
+
+
+}
+
+.ulHandler {
+    padding-left: 0;
+}
+
+.ulHandler li {
+    padding: 0.5rem 0rem;
+}
+
+.ulHandler li a {
+    display: block;
+
+}
+
+/*========================================================== Accessing Mobile Version========================================================== */
+@media (max-width:500px) {
+    #headerCont {
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    #headerCont img {
+        width: 6rem;
+        height: 1.6rem;
+    }
+
+    .lang_s {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: 0rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
+    #title_heading {
+        margin-top: 4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #title_heading div {
+        margin-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    #title_heading div h1 {
+        font-size: 2.0rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #title_heading div>p {
+        margin-top: 1rem;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-size: 1.1rem;
+    }
+
+    #title_heading div .ready_p {
+        font-size: 1.2rem;
+
+
+    }
+
+    .email_ask {
+        display: block;
+        width: 85%;
+
+    }
+
+    .get_start {
+
+        border-radius: 4px;
+        width: 50%;
+        margin: auto;
+        display: block;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin-top: 0.8rem;
+
+        font-size: 1.2rem;
+
+    }
+
+    #back_banner {
+
+
+        object-fit: contain;
+        background-size: cover;
+        background-image: url("images/banner.jpg");
+        background-repeat: no-repeat;
+
+    }
+
+    .first-sec {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .first-sec div {
+        width: 100%;
+    }
+
+    #left-para-heading h1,
+    #right-child-content h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    #left-para-heading p,
+    #right-child-content p {
+        margin-top: 0;
+        font-size: 1.1rem;
+        padding: 0.5rem 2rem;
+        text-align: center;
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #third-sec {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin: auto
+    }
+
+    #third-sec div {
+        width: 100%;
+    }
+
+    #faq {
+        width: 90%;
+
+    }
+
+    #faq h1 {
+        padding-top: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+
+    }
+
+    #faq ul li {
+        font-size: 1.2rem;
+    }
+
+    #faq_email_btn {
+        padding-bottom: 8rem;
+        padding-top: 2rem;
+    }
+
+    .mob_download {
+        flex-direction: column-reverse;
+    }
+
+    #download_option {
+        width: 66%;
+        top: 72%;
+        justify-content: center;
+        left: 16%;
+    }
+
+    #download_option div {
+        width: 30%;
+
+    }
+
+    #download_option img {
+        width: 48%;
+        margin: 0;
+
+
+    }
+
+    #download_option #text_d h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
+        padding-top: 0rem;
+        padding-left: 0rem;
+    }
+
+    #download_option #text_d {
+        display: inline-block;
+        width: 60%;
+
+    }
+
+    #download_option #text_d #downloading {
+        color: #0071eb;
+
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding-left: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    #box1,
+    #box3 {
+        width: 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    #box1 {
+
+        background-image: url("images/boxshot.png");
+
+    }
+
+    #box3 {
+        background-image: url("images/download-icon.gif");
+    }
+
+    .download_section {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    #box1 img,
+    #box3 img {
+        display: none;
+    }
+
+}
+
+@media (min-width:501px) and (max-width:1000px) {
+    #headerCont {
+
+        padding-right: 1rem;
+        padding-top: 1.4rem;
+        padding-left: 1rem;
+    }
+
+
+}
