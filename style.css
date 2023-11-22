@@ -24,12 +24,38 @@ nav {
     padding: 0.5rem 0rem;
 }
 
+
+.mob {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    display: none;
+
+}
+
+.mob_nav {
+    width: 20%;
+    z-index: 2;
+    position: absolute;
+    background-color: #363636;
+
+}
+
+.mob_nav ul {
+    list-style-type: none;
+    border-top: 2px solid white;
+    margin-top: 0;
+}
+
 nav h1 {
 
     margin: 0;
+    width: 81%;
     padding: 0.5rem 2.6rem;
     color: #fff;
 }
+
+
 
 nav ul {
     list-style-type: none;
@@ -38,7 +64,8 @@ nav ul {
     margin: 0;
 }
 
-nav ul a {
+nav ul a,
+.mob_nav ul a {
     text-decoration: none;
     color: #c5c2c2;
 
@@ -64,6 +91,9 @@ nav ul a:hover {
 
 }
 
+.fa-bars {
+    visibility: hidden;
+}
 
 .container {
 
@@ -303,11 +333,8 @@ footer ul {
 
 footer li {
     text-align: center;
-
     margin: auto;
     margin-top: 1rem;
-
-
 }
 
 footer li a {
@@ -490,17 +517,26 @@ footer {
         display: none;
     }
 
-    .banner {
-        /* background-position: center; */
-    }
-
     .myCont {
         display: flex;
         justify-content: center;
     }
 
     nav ul {
-        flex-direction: column;
+        display: none;
+    }
+
+    .hr_style {
+
+        width: 20%;
+        margin-top: 2rem;
+
+    }
+
+    #pgfirstSection button {
+        margin: auto;
+        width: 33%;
+        margin-top: 0.8rem;
     }
 
     #services_container div {
@@ -515,7 +551,7 @@ footer {
     }
 
     .c_1_WC h1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
 
     }
 
@@ -536,5 +572,100 @@ footer {
     .c_1_WC button {
 
         padding: 1rem 2rem;
+    }
+
+    #contact_us_first {
+        background-color: #ededed;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+        padding-top: 0.3rem;
+    }
+
+    #contact_us_first ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+    }
+
+    #contact_us_first p {
+        padding-top: 2rem;
+    }
+
+    .inner_para {
+        padding-top: 0;
+
+    }
+
+    #contact_us_first ul li div p {
+
+        padding-top: 0.5rem;
+
+    }
+
+    #contact_us_second form {
+        width: 80%;
+        padding: 0;
+        margin: auto;
+    }
+
+    #contact_us_second form input {
+        width: 100%;
+        padding: 0.5rem 0.8rem;
+        margin-top: 0.2rem;
+        border: 1px solid #c5c2c2;
+    }
+
+    #contact_us_second form div textarea {
+        margin-top: 0.3rem;
+        width: calc(46% + 0.2rem + 43% + 2rem);
+    }
+
+
+
+    #contact_us_second {
+        padding-bottom: 3rem;
+    }
+
+    #contact_us_second h1 {
+        font-size: 1rem;
+
+        margin-top: 3rem;
+    }
+
+    footer ul {
+        width: 50%;
+    }
+
+    .fa-bars {
+        color: #fff;
+        display: block;
+        visibility: visible;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 900;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mob_nav {
+        width: 48%;
+
+        position: absolute;
+        background-color: #363636;
+        height: 100vh;
+    }
+
+    .mob_nav ul {
+
+        padding: 0;
+        text-align: center;
+    }
+
+    .mob_nav ul li a:hover {
+        background-color: #616161;
     }
 }
