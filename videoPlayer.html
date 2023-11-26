@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player </title>
+    <link rel="stylesheet" href="videoPlayer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="cont">
+        <section>
+            <video src="" controls></video>
+            <div id="controls">
+                <div>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <div id="audio_box">
+
+                        <i class="fa-solid fa-volume-high" id="volumeHigh"></i>
+                        <input type="range" name="" id="audio_seek">
+                    </div>
+                    <i class="fa-solid fa-play" id="playBtn"></i>
+                    <i class="fa-solid fa-pause" id="pauseBtn"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <input type="range" name="" id="video_seek">
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <script src="videoPlayer.js"> </script>
+</body>
+
+</html>
