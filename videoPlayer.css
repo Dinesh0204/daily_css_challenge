@@ -7,7 +7,7 @@ body {
     justify-content: center;
     position: relative;
     align-items: center;
-    border: 2px solid red;
+    
     height: 100vh;
 }
 
@@ -34,7 +34,7 @@ video {
 #controls {
     width: 100%;
     margin: auto;
-    border: 2px solid red;
+
     display: flex;
     gap: 1.5rem;
     position: relative;
