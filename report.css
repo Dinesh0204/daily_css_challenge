@@ -1,0 +1,226 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+header {
+    border-bottom: 2px solid;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+header div img {
+    width: 15%;
+}
+
+header h1 {
+
+    font-size: 1rem;
+    font-weight: 1000;
+    text-align: center;
+    letter-spacing: 0.9rem;
+    transform: scaleY(1.8)
+}
+
+table {
+    width: 100%;
+
+
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+
+}
+
+td {
+    padding: 6px;
+
+}
+
+#note div {
+    display: flex;
+}
+
+#endCont {
+    display: flex;
+    justify-content: center;
+}
+
+#endCont img {
+    width: 50%;
+    height: 50%;
+}
+
+ul li {
+    font-size: 0.8rem;
+}
+
+caption {
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+#stampCont {
+    display: flex;
+    text-align: center;
+}
+
+#stampCont div {
+    width: 35%;
+    margin-top: 2rem;
+}
+
+#stampCont div h1 {
+    font-size: 1rem;
+}
+
+#stampCont div .para {
+    padding-top: 1rem;
+    margin: 0;
+
+}
+
+#stampCont div p {
+    margin: 0;
+}
+
+#stampCont div img {
+    width: 45%;
+}
+
+footer {}
+
+#qr {
+    display: flex;
+
+}
+
+#qr div {
+    width: 100%;
+}
+
+
+#qr img {
+    width: 6%;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+@media (min-width:500px) and (max-width:951px) {
+
+    th,
+    td {
+        font-size: 0.6rem;
+    }
+
+    header {
+        margin-top: 3rem;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    header h1 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        padding: 1.1rem 0rem;
+    }
+
+    td {
+        padding: 3px;
+    }
+
+    header div {
+        justify-content: center;
+    }
+
+    header div img {
+        width: 28%;
+    }
+
+    #stampCont div {
+        margin-bottom: 1.5rem;
+    }
+
+    #stampCont div h1 {
+        margin: 0;
+    }
+
+    #stampCont div p {
+        margin: 0;
+        font-size: 0.5rem;
+    }
+
+    #stampCont div .para {
+        padding-top: 0rem;
+        margin: 0;
+
+    }
+
+    #note div ul li,
+    footer p,
+    div p {
+        font-size: 0.5rem;
+    }
+
+    #qr img {
+        width: 11%;
+    }
+
+    footer #stampCont div img {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+@media print {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+}
