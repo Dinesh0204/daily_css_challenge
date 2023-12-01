@@ -142,7 +142,7 @@ footer p {
 }
 
 
-@media (min-width:500px) and (max-width:951px) {
+@media (max-width:500px) {
 
     th,
     td {
