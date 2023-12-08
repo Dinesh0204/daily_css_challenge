@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#parent_cont {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: auto;
+
+}
+
+#parent_cont img {
+    height: 100%;
+    width: 35%;
+    margin: auto;
+}
+
+#parent_cont section {
+
+    width: 30%;
+    position: absolute;
+    left: 35%;
+
+    top: 20%;
+}
+
+#parent_cont section p,
+h1 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+
+}
+
+#parent_cont section p {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form input,
+label {
+    display: block;
+    width: 85%;
+}
+
+form input {
+    padding: 0.4rem 1rem;
+    margin-bottom: 1rem;
+}
+
+form label {
+    /* font-size: 1.1rem; */
+    font-weight: 600;
+}
+
+#btn {
+    width: 100%;
+
+    text-align: center;
+
+
+}
+
+#btn button {
+    padding: 0.6rem 0rem;
+    background-color: #f3670a;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+}
+
+#data_cont {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 1rem 0rem;
+
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table tr {
+    background-color: rgb(227, 249, 255);
+}
+
+th,
+td {
+    border: 1px solid;
+
+}
+
+@media (max-width :900px) and (min-width:500px) {
+    #parent_cont img {
+
+        width: 40%;
+
+    }
+
+    #parent_cont section {
+        width: 30%;
+        position: absolute;
+        left: 34%;
+        top: 16%;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    form input {
+        padding: 0.3rem 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 499px) {
+    #parent_cont img {
+
+        width: 100%;
+
+    }
+
+    #parent_cont section {
+        width: 79%;
+        position: absolute;
+        left: 10%;
+        top: 23%;
+    }
+
+    form {
+        padding: 0;
+        margin: 0;
+    }
+
+    #btn button {
+        padding: 0.2rem 0rem;
+    }
+}
