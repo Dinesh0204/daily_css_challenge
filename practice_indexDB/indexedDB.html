@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+        }
+
+        main {
+            border: 2px solid #e44d26;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #e44d26;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+        }
+
+        section {
+            background-color: #ccc;
+            width: 100%;
+            
+            display: grid;
+            grid-template-columns: repeat(2, 48%);
+            margin-bottom: 10px;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        button {
+            padding: 10px;
+            background-color: #e44d26;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d14023;
+        }
+
+        .table_holder {
+            margin-top: 2rem;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #e44d26;
+            color: #fff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <h1> IndexedDB CRUD </h1>
+        <section>
+            <input placeholder="Name" type="text" name="" id="">
+            <input placeholder="Age" type="text" name="" id="">
+            <input placeholder="Location" type="text" name="" id="">
+            <button>Insert</button>
+            <button id="fetch">Show Data </button>
+            <button id="fetch">SEARCH BY NAME </button>
+
+        </section>
+        <div class="table_holder">
+            <table>
+
+            </table>
+        </div>
+    </main>
+    <script src="indexDB.js"> </script>
+</body>
+
+</html>
